@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+
+
+    <style name="buttonAllClear" parent="ColumnFirst">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/dp_80p</item>
+        <item name="android:layout_rowWeight">1</item>
+        <item name="android:layout_columnWeight">1</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:onClick">allClearAction</item>
+        <item name="android:layout_marginTop">@dimen/dp_8dp</item>
+    </style>
+
+    <style name="buttonOperation" parent="OperationButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/dp_80p</item>
+        <item name="android:layout_rowWeight">1</item>
+        <item name="android:layout_columnWeight">1</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:onClick">operationAction</item>
+        <item name="android:layout_marginTop">@dimen/dp_8dp</item>
+
+    </style>
+
+    <style name="buttonBackSpace" parent="ColumnFirst">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/dp_80p</item>
+        <item name="android:layout_rowWeight">1</item>
+        <item name="android:layout_columnWeight">1</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:onClick">backspaceAction</item>
+        <item name="android:layout_marginTop">@dimen/dp_8dp</item>
+    </style>
+
+    <style name="buttonPercent" parent="ColumnFirst">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/dp_8dp</item>
+        <item name="android:layout_height">@dimen/dp_80p</item>
+        <item name="android:layout_rowWeight">1</item>
+        <item name="android:layout_columnWeight">1</item>
+        <item name="android:layout_gravity">center</item>
+        <!--        <item name="android:onClick"></item>-->
+    </style>
+
+    <style name="buttonEquals" parent="OperationButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/dp_80p</item>
+        <item name="android:layout_rowWeight">1</item>
+        <item name="android:layout_columnWeight">1</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:onClick">equalsAction</item>
+        <item name="android:layout_marginTop">@dimen/dp_8dp</item>
+    </style>
+
+
+    <style name="buttonNumber" parent="NumbersButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/dp_80p</item>
+        <item name="android:layout_rowWeight">1</item>
+        <item name="android:layout_columnWeight">1</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:onClick">equalsAction</item>
+        <item name="android:layout_marginTop">@dimen/dp_8dp</item>
+    </style>
+</resources>

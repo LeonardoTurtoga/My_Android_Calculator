@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+
+    <color name="backgroundColorGrid_darkMode">#2a2d37</color>
+    <color name="Buttons_ColorGrid_darkMode">#282b33</color>
+
+
+
+
+    <color name="semi_white">#f5f5f5</color>
+    <color name="off_white">#f9f9f9</color>
+
+    <color name="orange">#dc6f6d</color>
+    <color name="blue">#49eed9</color>
+
+</resources>

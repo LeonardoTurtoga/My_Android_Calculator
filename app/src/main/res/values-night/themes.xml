@@ -1,0 +1,40 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.New_Calculator_Fr" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your dark theme here. -->
+        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+    </style>
+<!--**************************************************************************************************-->
+
+
+    <style name="ButtonsGrid">
+        <item name="android:background">@drawable/rounded_top_dark_mode</item>
+    </style>
+
+    <style name="Solution_Themes">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/dp_64dp</item>
+    </style>
+
+    <style name="ColumnFirst">
+        <item name="android:backgroundTint">@color/Buttons_ColorGrid_darkMode</item>
+        <item name="android:textColor">@color/blue</item>
+        <item name="cornerRadius">@dimen/dp_16dp</item>
+        <item name="android:textSize">@dimen/font_size_24sp</item>
+    </style>
+
+    <style name="OperationButton">
+        <item name="android:backgroundTint">@color/Buttons_ColorGrid_darkMode</item>
+        <item name="android:textColor">@color/orange</item>
+        <item name="cornerRadius">@dimen/dp_16dp</item>
+        <item name="android:textSize">@dimen/font_size_24sp</item>
+    </style>
+
+    <style name="NumbersButton">
+        <item name="android:backgroundTint">@color/Buttons_ColorGrid_darkMode</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="cornerRadius">@dimen/dp_16dp</item>
+        <item name="android:textSize">@dimen/font_size_24sp</item>
+    </style>
+
+</resources>
