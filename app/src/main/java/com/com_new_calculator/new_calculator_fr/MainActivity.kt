@@ -1,20 +1,46 @@
 package com.com_new_calculator.new_calculator_fr
 
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
+import android.view.View
+import android.widget.Button
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
+import com.com_new_calculator.new_calculator_fr.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
+
+    private lateinit var binding: ActivityMainBinding
+    private lateinit var solution: TextView
+    private lateinit var answer: TextView
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
-        setContentView(R.layout.activity_main)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+
+        solution = binding.solutionTV
+        answer = binding.answerTV
+    }
+
+
+
+    fun allClearButton(view: View) {
+        solution.text = ""
+        answer.text = ""
+    }
+
+    fun numberButtons(view: View) {
+
+        if (view is Button) {
+            solution.append(view.text)
+        }
+    }
+    fun backSpaceButton(view: View){
+    var length = solution.length()
+
+        if(length > 0){
+            solution.text = solution.text.subSequence(0,length - 1)
         }
     }
 }

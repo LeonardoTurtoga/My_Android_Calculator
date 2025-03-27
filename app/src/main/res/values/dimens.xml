@@ -11,6 +11,8 @@
     <dimen name="dp_254dp">254dp</dimen>
     <dimen name="dp_460dp">460dp</dimen>
     <dimen name="dp_80p">80dp</dimen>
+    <dimen name="dp_42p">42dp</dimen>
+
 
 
     <dimen name="font_8sp">8sp</dimen>

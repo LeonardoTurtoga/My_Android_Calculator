@@ -10,7 +10,7 @@
         <item name="android:layout_rowWeight">1</item>
         <item name="android:layout_columnWeight">1</item>
         <item name="android:layout_gravity">center</item>
-        <item name="android:onClick">allClearAction</item>
+<!--        <item name="android:onClick">allClearAction</item>-->
         <item name="android:layout_marginTop">@dimen/dp_8dp</item>
     </style>
 
@@ -20,9 +20,8 @@
         <item name="android:layout_rowWeight">1</item>
         <item name="android:layout_columnWeight">1</item>
         <item name="android:layout_gravity">center</item>
-        <item name="android:onClick">operationAction</item>
+<!--        <item name="android:onClick">operationAction</item>-->
         <item name="android:layout_marginTop">@dimen/dp_8dp</item>
-
     </style>
 
     <style name="buttonBackSpace" parent="ColumnFirst">
@@ -31,7 +30,7 @@
         <item name="android:layout_rowWeight">1</item>
         <item name="android:layout_columnWeight">1</item>
         <item name="android:layout_gravity">center</item>
-        <item name="android:onClick">backspaceAction</item>
+<!--        <item name="android:onClick">backspaceAction</item>-->
         <item name="android:layout_marginTop">@dimen/dp_8dp</item>
     </style>
 
@@ -51,7 +50,7 @@
         <item name="android:layout_rowWeight">1</item>
         <item name="android:layout_columnWeight">1</item>
         <item name="android:layout_gravity">center</item>
-        <item name="android:onClick">equalsAction</item>
+<!--        <item name="android:onClick">equalsAction</item>-->
         <item name="android:layout_marginTop">@dimen/dp_8dp</item>
     </style>
 
@@ -62,7 +61,7 @@
         <item name="android:layout_rowWeight">1</item>
         <item name="android:layout_columnWeight">1</item>
         <item name="android:layout_gravity">center</item>
-        <item name="android:onClick">equalsAction</item>
+<!--        <item name="android:onClick">numberAction</item>-->
         <item name="android:layout_marginTop">@dimen/dp_8dp</item>
     </style>
 </resources>

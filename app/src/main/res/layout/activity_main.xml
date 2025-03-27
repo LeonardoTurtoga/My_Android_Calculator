@@ -7,13 +7,14 @@
     android:layout_height="match_parent"
 
     tools:context=".MainActivity"
-    tools:ignore="TextContrastCheck"
-    >
+    tools:ignore="TextContrastCheck, UsingOnClickInXml"
 
+    >
 
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/textView2"
+        android:layout_marginTop="@dimen/dp_42p"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/app_name"
@@ -36,13 +37,13 @@
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/answerTV"
+        style="@style/Solution_Themes"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="@dimen/dp_16dp"
         android:gravity="end|end|bottom"
         android:text="@string/calculation"
-        style="@style/Solution_Themes"
         android:textSize="@dimen/font_size_64sp"
         app:layout_constraintBottom_toTopOf="@id/button_grid"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -58,94 +59,137 @@
         android:paddingVertical="@dimen/dp_24dp"
         android:rowCount="5"
 
-        app:layout_constraintBottom_toBottomOf="parent"
-        >
+        app:layout_constraintBottom_toBottomOf="parent">
 
 
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/all.clear.button"
             style="@style/buttonAllClear"
-            android:text="@string/button_string_AC" />
+            android:onClick="allClearButton"
+            android:text="@string/button_string_AC"
+            />
 
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/percent.button"
             style="@style/buttonPercent"
-            android:text="@string/button_string_percent"
- />
+            android:text="@string/button_string_percent" />
 
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/back.space.button"
+            android:onClick="backSpaceButton"
             style="@style/buttonBackSpace"
             android:text="@string/button_string_C" />
 
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/operation.divide.button"
+
             style="@style/buttonOperation"
             android:text="@string/button_string_divide" />
 
 
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/number.7.button"
+            android:onClick="numberButtons"
             style="@style/buttonNumber"
             android:text="@string/button_string_7" />
 
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/number.8.button"
+            android:onClick="numberButtons"
 
             style="@style/buttonNumber"
             android:text="@string/button_string_8" />
 
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/number.9.button"
+            android:onClick="numberButtons"
+
             style="@style/buttonNumber"
             android:text="@string/button_string_9" />
 
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/operation.multiple.button"
+
             style="@style/buttonOperation"
             android:text="@string/button_string_multiple" />
 
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/number.4.button"
+            android:onClick="numberButtons"
+
             style="@style/buttonNumber"
             android:text="@string/button_string_4" />
 
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/number.5.button"
+            android:onClick="numberButtons"
+
             style="@style/buttonNumber"
             android:text="@string/button_string_5" />
 
         <com.google.android.material.button.MaterialButton
+            android:onClick="numberButtons"
+            android:id="@+id/number.6.button"
             style="@style/buttonNumber"
             android:text="@string/button_string_6" />
 
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/operation.minus.button"
             style="@style/buttonOperation"
             android:text="@string/button_string_subtract" />
 
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/number.1.button"
+            android:onClick="numberButtons"
             style="@style/buttonNumber"
+
+
             android:text="@string/button_string_1" />
 
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/number.2.button"
             style="@style/buttonNumber"
+            android:onClick="numberButtons"
+
             android:text="@string/button_number_2" />
 
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/number.3.button"
             style="@style/buttonNumber"
+
+            android:onClick="numberButtons"
             android:text="@string/button_string_3" />
 
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/operation.plus.button"
             style="@style/buttonOperation"
+
             android:text="@string/button_string_plus" />
 
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/number.00.button"
+            android:onClick="numberButtons"
 
             style="@style/buttonNumber"
             android:text="@string/button_string_00" />
 
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/number.0.button"
 
+            android:onClick="numberButtons"
             style="@style/buttonNumber"
             android:text="@string/button_string_0" />
 
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/number.period.button"
 
             style="@style/buttonNumber"
             android:text="@string/button_string_." />
 
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/equals.button"
             style="@style/buttonEquals"
+
             android:text="@string/button_string_equals" />
 
 
