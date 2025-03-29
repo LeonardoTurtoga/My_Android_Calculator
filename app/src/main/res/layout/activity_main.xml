@@ -82,7 +82,7 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/operation.divide.button"
-
+            android:onClick="operationButtons"
             style="@style/buttonOperation"
             android:text="@string/button_string_divide" />
 
@@ -109,7 +109,7 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/operation.multiple.button"
-
+            android:onClick="operationButtons"
             style="@style/buttonOperation"
             android:text="@string/button_string_multiple" />
 
@@ -136,6 +136,7 @@
         <com.google.android.material.button.MaterialButton
             android:id="@+id/operation.minus.button"
             style="@style/buttonOperation"
+            android:onClick="operationButtons"
             android:text="@string/button_string_subtract" />
 
         <com.google.android.material.button.MaterialButton
@@ -163,7 +164,7 @@
         <com.google.android.material.button.MaterialButton
             android:id="@+id/operation.plus.button"
             style="@style/buttonOperation"
-
+            android:onClick="operationButtons"
             android:text="@string/button_string_plus" />
 
         <com.google.android.material.button.MaterialButton
@@ -182,14 +183,14 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/number.period.button"
-
+            android:onClick="numberButtons"
             style="@style/buttonNumber"
             android:text="@string/button_string_." />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/equals.button"
             style="@style/buttonEquals"
-
+            android:onClick="equalsButton"
             android:text="@string/button_string_equals" />
 
 
