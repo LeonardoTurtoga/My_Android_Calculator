@@ -29,10 +29,10 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginTop="@dimen/dp_16dp"
-        android:layout_marginEnd="@dimen/dp_8dp"
+        android:layout_marginEnd="@dimen/dp_16dp"
         android:backgroundTint="@color/white"
         android:gravity="end|end|bottom"
-        android:text="@string/equation"
+        android:text=""
         app:layout_constraintBottom_toTopOf="@id/answerTV" />
 
 
@@ -43,7 +43,7 @@
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="@dimen/dp_16dp"
         android:gravity="end|end|bottom"
-        android:text="@string/button_string_00"
+        android:text=""
 
         android:textSize="@dimen/font_size_32sp"
         app:layout_constraintBottom_toTopOf="@id/button_grid"
