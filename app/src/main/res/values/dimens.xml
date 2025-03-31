@@ -20,6 +20,10 @@
     <dimen name="font_size_16sp">16sp</dimen>
     <dimen name="font_size_24sp">24sp</dimen>
     <dimen name="font_size_32sp">32sp</dimen>
+    <dimen name="font_size_40sp">40sp</dimen>
+
+
     <dimen name="font_size_64sp">64sp</dimen>
+    <dimen name="font_size_80sp">80sp</dimen>
 
 </resources>

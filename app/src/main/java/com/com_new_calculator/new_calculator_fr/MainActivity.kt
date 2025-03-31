@@ -1,11 +1,15 @@
 package com.com_new_calculator.new_calculator_fr
 
 import android.os.Bundle
+import android.util.TypedValue
 import android.view.View
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
+import androidx.core.widget.TextViewCompat
 import com.com_new_calculator.new_calculator_fr.databinding.ActivityMainBinding
+import net.objecthunter.exp4j.ExpressionBuilder
 
 class MainActivity : AppCompatActivity() {
 
@@ -28,59 +32,68 @@ class MainActivity : AppCompatActivity() {
 
 
     fun numberButtons(view: View) {
-
-        if (view is Button) {
-            if (view.text == ".") {
-                if (canAddDecimal)
-                    solution.append(view.text)
-                    canAddDecimal = false
-            } else
+        if (view !is Button) return
+        when (view.text) {
+            "." -> {
                 solution.append(view.text)
-                canAddOperation = true
+                canAddDecimal = false
+            }
+
+            else -> {
+                solution.append(view.text)
+            }
+        }
+        canAddOperation = true
+
+
+    }
+
+    fun calculate() {
+        try {
+            val result = evaluateMathExpression(solution.text.toString())
+            answer.text = result.toString()
+        } catch (e: Exception) {
+
         }
     }
-//// from Deepseek
-//    fun numberButtons(view: View) {
-//        if (view is Button) {
-//            when {
-//                view.text == "." && canAddDecimal -> {
-//                    solution.append(view.text)
-//                    canAddDecimal = false
-//                }
-//                view.text != "." -> {
-//                    solution.append(view.text)
-//                    canAddOperation =true
-//                }
-//            }
-//        }
-//    }
 
     fun allClearButton(view: View) {
         solution.text = ""
         answer.text = ""
     }
 
-    fun backSpaceButton(view: View){
-    var length = solution.length()
+    fun backSpaceButton(view: View) {
+        var length = solution.length()
 
-        if(length > 0){
-            solution.text = solution.text.subSequence(0,length - 1)
+        if (length > 0) {
+            solution.text = solution.text.subSequence(0, length - 1)
         }
     }
 
     fun operationButtons(view: View) {
-        if(view is Button && canAddOperation){
+        if (view is Button && canAddOperation) {
             solution.append(view.text)
             canAddOperation = false
             canAddDecimal = true
         }
     }
+
     fun equalsButton(view: View) {
 
 
+        calculate()
+    }
 
+    fun evaluateMathExpression(expression: String): Double {
+        val sanitize = expression.replace("x", "*")
+            return ExpressionBuilder(sanitize)
+                .build()
+                .evaluate()
     }
 
 
 }
+
+
+
 

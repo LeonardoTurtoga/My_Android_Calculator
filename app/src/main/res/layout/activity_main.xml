@@ -25,26 +25,27 @@
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/solutionTV"
+        style="@style/Solution_Themes"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginTop="@dimen/dp_16dp"
         android:layout_marginEnd="@dimen/dp_8dp"
+        android:backgroundTint="@color/white"
         android:gravity="end|end|bottom"
         android:text="@string/equation"
-        android:textSize="@dimen/font_size_32sp"
         app:layout_constraintBottom_toTopOf="@id/answerTV" />
 
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/answerTV"
-        style="@style/Solution_Themes"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="@dimen/dp_16dp"
         android:gravity="end|end|bottom"
-        android:text="@string/calculation"
-        android:textSize="@dimen/font_size_64sp"
+        android:text="@string/button_string_00"
+
+        android:textSize="@dimen/font_size_32sp"
         app:layout_constraintBottom_toTopOf="@id/button_grid"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -72,6 +73,7 @@
         <com.google.android.material.button.MaterialButton
             android:id="@+id/percent.button"
             style="@style/buttonPercent"
+            android:onClick="operationButtons"
             android:text="@string/button_string_percent" />
 
         <com.google.android.material.button.MaterialButton
@@ -123,7 +125,6 @@
         <com.google.android.material.button.MaterialButton
             android:id="@+id/number.5.button"
             android:onClick="numberButtons"
-
             style="@style/buttonNumber"
             android:text="@string/button_string_5" />
 
